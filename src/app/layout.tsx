@@ -4,7 +4,6 @@ import './globals.css';
 import AuthProvider from '../context/AuthProvider';
 import { Toaster } from '@/components/ui/sonner';
 
-
 const inter = Inter({ subsets: ['latin'] });
 
 export const metadata: Metadata = {
@@ -22,7 +21,7 @@ export default async function RootLayout({ children }: RootLayoutProps) {
       <AuthProvider>
         <body className={inter.className}>
           {children}
-          <Toaster/>
+          <Toaster />
         </body>
       </AuthProvider>
     </html>
